@@ -1,20 +1,31 @@
 {
-  "name": "create-random-people",
+  "name": "random-people",
   "version": "0.1.0",
   "private": true,
+  "main": "./App.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "expo": "^37.0.12",
     "react": "^16.13.1",
+    "react-art": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-native": "^0.62.2",
+    "react-native-swipeable-flat-list": "^0.1.2",
+    "react-native-web": "^0.12.3",
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start-web": "react-scripts start",
+    "build-web": "react-scripts build",
+    "test-web": "react-scripts test",
+    "eject-web": "react-scripts eject",
+    "start-native": "expo start",
+    "android": "expo android",
+    "ios": "expo ios",
+    "build:ios": "expo build:ios",
+    "build:android": "expo build:android"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +41,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx-source": "^6.22.0",
+    "babel-preset-expo": "^8.2.3"
   }
 }
